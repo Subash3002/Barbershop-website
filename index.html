@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>barber wesite</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="banner">
+        <h3><img src="logo.png" alt="">BARBER</h3>
+        <div class="heading">
+            <h1>Hair Studio</h1>
+            <p>Style Your Hair is Style Your Life</p>
+            <div class="banner-btn">
+                <a href=""><span></span> Find Out</a>
+                <a href=""><span></span> Read More</a>
+            </div>
+        </div>
+    </section>
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="#banner">HOME</a></li>
+                <li><a href="#feature">FEATURES</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">TESTIMONIALS</a></li>
+                <li><a href="">MEET US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="hamburger.png"  id="menu" alt="">
+    </div>
+
+    <!--Features-->
+    <section id="feature">
+        <div class="feature-title">
+            <p>FEATURES</p>
+            <h1>Why Choose Us</h1>
+        </div>
+        <div class="features">
+            <div class="featrues-content">
+                <div class="features-content1">
+                    <h1>Experienced Staff</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit sunt adipisci quia molestias </p>
+                </div>
+                    
+                <div class="features-content2">
+                    <h1>Pre Booking Online</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit sunt adipisci quia molestias</p>
+                </div>
+                <div class="features-content3">
+                    <h1>Affordable Cost</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit sunt adipisci quia molestias </p>
+                </div>
+             </div>
+             <div class="bbr-img">
+             </div>
+        </div>
+    </section>
+    <script>
+        var menubtn = document.getElementById("menubtn")
+        var sidenav = document.getElementById("sidenav")
+        var menu = document.getElementById("menu")
+        sidenav.style.right = "-200px"
+
+        menubtn.onclick = function(){
+            if(sidenav.style.right=="-200px"){
+                sidenav.style.right = "0";
+                menu.src = "close.png";
+            }
+            else{
+                sidenav.style.right = "-200px"
+                menu.src = "hamburger.png";
+            }
+        }
+    </script>
+</body>
+</html>
